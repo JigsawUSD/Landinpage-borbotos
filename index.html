@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurador Têxtil Profissional 230V | Tira-Borbotos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://js.stripe.com/v3/"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfeff',
+              100: '#cffafe',
+              500: '#06b6d4',
+              600: '#0891b2',
+              700: '#0e7490',
+              900: '#164e63',
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-slate-900 font-sans antialiased pb-24">
+
+  <!-- Top Urgency Banner -->
+  <div class="bg-brand-500 text-white text-xs font-semibold py-2 px-4 text-center tracking-wide">
+    PORTES GRÁTIS • ENTREGA RÁPIDA EM 3 A 5 DIAS (ARMAZÉM EUROPEU)
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 px-4 py-3">
+    <div class="max-w-md mx-auto flex items-center justify-between">
+      <div class="font-extrabold text-brand-700 tracking-tight text-lg">
+        LAVOISIER <span class="text-brand-500 text-xs uppercase px-1.5 py-0.5 bg-brand-50 rounded font-semibold">PRO</span>
+      </div>
+      <a href="#comprar" class="bg-brand-500 hover:bg-brand-600 text-white text-xs font-bold px-4 py-2 rounded-full transition shadow-sm">
+        Comprar Agora
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-md mx-auto px-4 pt-6 space-y-8">
+
+    <!-- Hero Section -->
+    <section class="space-y-4 text-center">
+      <div class="inline-flex items-center gap-1.5 bg-brand-50 text-brand-700 text-xs font-bold px-3 py-1 rounded-full border border-brand-100">
+        <span>Tecnologia 230V de Alta Potência</span>
+      </div>
+      
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+        Dê uma nova vida às suas camisolas e roupas favoritas em segundos.
+      </h1>
+      
+      <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+        Esqueça os aparelhos fraquinhos a pilhas que param a meio da limpeza. O nosso restaurador têxtil de tamanho médio-grande elimina borbotos e pelos com precisão cirúrgica e potência constante.
+      </p>
+
+      <!-- Product Image / Visual Showcase Card -->
+      <div class="relative rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 shadow-lg text-left">
+        <div class="absolute top-3 left-3 bg-red-600 text-white text-xs font-extrabold px-2.5 py-1 rounded-md shadow z-10 tracking-wide uppercase">
+          BLACK FRIDAY • 50% OFF
+        </div>
+        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur text-slate-800 text-xs font-semibold px-2.5 py-1 rounded-md border border-slate-200 z-10">
+          Stock Limitado
+        </div>
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Tira-Borbotos Profissional" class="w-full h-64 object-cover">
+        
+        <div class="p-4 bg-white space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider">Restaurador Têxtil 230V</span>
+            <div class="flex items-center text-amber-500 text-xs font-bold">
+              <span>★ 4.9 (1.420 avaliações)</span>
+            </div>
+          </div>
+          <div class="flex items-baseline gap-2">
+            <span class="text-3xl font-extrabold text-slate-900">€17,99</span>
+            <span class="text-sm text-slate-400 line-through">€34,99</span>
+            <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded ml-auto">Poupe €17,00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="grid grid-cols-3 gap-2 pt-2">
+        <div class="bg-slate-50 border border-slate-100 rounded-xl p-3 text-center">
+          <div class="text-brand-600 font-bold text-xs mb-1">Envio Expresso</div>
+          <div class="text-slate-500 text-[11px]">3 a 5 dias úteis</div>
+        </div>
+        <div class="bg-slate-50 border border-slate-100 rounded-xl p-3 text-center">
+          <div class="text-brand-600 font-bold text-xs mb-1">Portes Grátis</div>
+          <div class="text-slate-500 text-[11px]">Sem taxas surpresa</div>
+        </div>
+        <div class="bg-slate-50 border border-slate-100 rounded-xl p-3 text-center">
+          <div class="text-brand-600 font-bold text-xs mb-1">Garantia Total</div>
+          <div class="text-slate-500 text-[11px]">14 dias de troca</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Problem / Story Section -->
+    <section class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 space-y-4 text-left">
+      <h2 class="text-xl font-bold text-slate-900 tracking-tight">
+        Quantas camisolas é que já deitou fora à conta dos borbotos?
+      </h2>
+      <p class="text-slate-600 text-sm leading-relaxed">
+        Cada vez que lava aquela camisola de que tanto gosta, o atrito cria bolinhas de tecido que dão um aspeto velho e desleixado.
+      </p>
+      <p class="text-slate-600 text-sm leading-relaxed">
+        Aquelas maquinetas baratas a pilhas parecem brinquedos: perdem a rotação ao fim de dois minutos. O nosso aparelho liga-se diretamente à corrente (230V), oferecendo força contínua para deixar o seu guarda-roupa impecável numa só passagem.
+      </p>
+    </section>
+
+    <!-- Key Benefits -->
+    <section class="space-y-4 text-left">
+      <h2 class="text-xl font-bold text-slate-900 text-center tracking-tight">
+        Por que razão este aparelho é indispensável
+      </h2>
+
+      <div class="space-y-3">
+        <div class="bg-white border border-slate-200 rounded-xl p-4 flex gap-4 items-start shadow-sm">
+          <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold flex-shrink-0">1</div>
+          <div>
+            <h3 class="font-bold text-slate-900 text-sm">Potência Direta 230V</h3>
+            <p class="text-slate-600 text-xs mt-1">Esqueça as pilhas fracas. Ligue à tomada e tenha força máxima constante.</p>
+          </div>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-xl p-4 flex gap-4 items-start shadow-sm">
+          <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold flex-shrink-0">2</div>
+          <div>
+            <h3 class="font-bold text-slate-900 text-sm">Cabeça de Corte Larga</h3>
+            <p class="text-slate-600 text-xs mt-1">Abraça uma área muito maior a cada passagem, despachando o trabalho a dobrar.</p>
+          </div>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-xl p-4 flex gap-4 items-start shadow-sm">
+          <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold flex-shrink-0">3</div>
+          <div>
+            <h3 class="font-bold text-slate-900 text-sm">Segurança para Malhas Delicadas</h3>
+            <p class="text-slate-600 text-xs mt-1">Lâminas em aço inoxidável com grelha protetora milimétrica que limpa o tecido sem o estragar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offer Comparison / Checkout Section -->
+    <section id="comprar" class="bg-brand-500 rounded-2xl p-6 text-white space-y-6 shadow-xl text-left">
+      <div class="text-center space-y-1">
+        <span class="bg-white/20 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Campanha Especial Black Friday</span>
+        <h2 class="text-2xl font-extrabold tracking-tight pt-2">Restaurador Têxtil Profissional</h2>
+        <p class="text-brand-100 text-xs">Tamanho médio-grande + Portes grátis incluídos</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-4 text-slate-900 space-y-3">
+        <div class="flex justify-between items-center text-xs border-b border-slate-100 pb-2">
+          <span class="text-slate-600">Restaurador Têxtil 230V</span>
+          <span class="font-bold">€34,99</span>
+        </div>
+        <div class="flex justify-between items-center text-xs border-b border-slate-100 pb-2">
+          <span class="text-slate-600">Portes de Envio Expresso</span>
+          <span class="font-bold text-emerald-600">GRÁTIS (€4,99)</span>
+        </div>
+        <div class="flex justify-between items-center text-xs border-b border-slate-100 pb-2">
+          <span class="text-slate-600">Garantia de Substituição 1 Ano</span>
+          <span class="font-bold text-emerald-600">Incluída</span>
+        </div>
+        <div class="flex justify-between items-center text-sm pt-1">
+          <span class="font-bold text-slate-700">Total a Pagar Hoje:</span>
+          <div class="text-right">
+            <span class="text-2xl font-extrabold text-brand-600">€17,99</span>
+            <div class="text-[10px] text-slate-400 line-through">€39,98 valor real</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stripe Checkout Form -->
+      <div class="bg-white rounded-xl p-4 text-slate-900 space-y-4 shadow-md">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+          <span class="text-xs font-bold text-slate-800 uppercase tracking-wide">Checkout Seguro Stripe (Test Mode)</span>
+          <span class="text-[10px] bg-brand-50 text-brand-700 px-2 py-0.5 rounded font-bold">SSL 256-bit</span>
+        </div>
+
+        <form id="stripe-checkout-form" onsubmit="processCheckout(event)" class="space-y-3 text-xs">
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Nome Completo</label>
+            <input type="text" id="cust-name" required placeholder="Ex: João Silva" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500 text-xs">
+          </div>
+
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Email para Confirmação e Rastreio</label>
+            <input type="email" id="cust-email" required placeholder="exemplo@email.pt" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500 text-xs">
+          </div>
+
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Morada de Entrega (Portugal / UE)</label>
+            <input type="text" id="cust-address" required placeholder="Rua Principal, nº 123, 2º Esq" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500 text-xs">
+          </div>
+
+          <div class="grid grid-cols-2 gap-2">
+            <div>
+              <label class="block font-semibold text-slate-700 mb-1">Código Postal</label>
+              <input type="text" id="cust-zip" required placeholder="1000-001" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500 text-xs">
+            </div>
+            <div>
+              <label class="block font-semibold text-slate-700 mb-1">País</label>
+              <select id="cust-country" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500 text-xs bg-white">
+                <option value="PT">Portugal</option>
+                <option value="ES">Espanha</option>
+                <option value="FR">França</option>
+                <option value="DE">Alemanha</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Stripe Card Info Notice -->
+          <div class="pt-2">
+            <div class="p-3 border border-brand-200 rounded-lg bg-brand-50/55 space-y-1 text-center">
+              <span class="font-bold text-brand-900 block">💳 Pagamento Seguro via Stripe</span>
+              <span class="text-[11px] text-slate-600 block">Ao clicar em Pagar, será redirecionado para o Checkout oficial da Stripe para concluir a compra de teste (€17,99).</span>
+            </div>
+          </div>
+
+          <button type="submit" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 rounded-xl shadow-md transition transform active:scale-95 text-sm mt-4 cursor-pointer">
+            Pagar €17,99 com Stripe
+          </button>
+        </form>
+
+        <!-- Success Message Hidden by Default -->
+        <div id="success-box" class="hidden bg-emerald-50 border border-emerald-200 rounded-xl p-4 text-center space-y-2">
+          <div class="text-emerald-600 font-extrabold text-sm">🎉 Sessão Stripe Iniciada com Sucesso!</div>
+          <p class="text-[11px] text-slate-600">A sua chave pública <code class="bg-emerald-100 px-1 py-0.5 rounded text-emerald-800 font-mono">pk_test_...</code> está perfeitamente integrada e o gateway de pagamento em modo de teste está operacional!</p>
+        </div>
+      </div>
+
+      <div class="text-center text-[11px] text-brand-100">
+        Pagamento 100% Seguro • Recolha de Morada para Envio na UE
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="space-y-4 pt-4 text-left">
+      <h2 class="text-lg font-bold text-slate-900 text-center">Perguntas Frequentes</h2>
+
+      <div class="space-y-3">
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 space-y-1">
+          <h3 class="font-bold text-slate-900 text-sm">Em quanto tempo chega a minha encomenda?</h3>
+          <p class="text-slate-600 text-xs">Enviamos diretamente do nosso armazém europeu, com entrega rápida estimada entre 3 a 5 dias úteis diretamente na sua morada em Portugal.</p>
+        </div>
+
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 space-y-1">
+          <h3 class="font-bold text-slate-900 text-sm">Funciona a pilhas ou à corrente?</h3>
+          <p class="text-slate-600 text-xs">Funciona ligado diretamente à tomada (230V), o que lhe dá uma força brutal e constante.</p>
+        </div>
+
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 space-y-1">
+          <h3 class="font-bold text-slate-900 text-sm">Estraga as roupas mais delicadas?</h3>
+          <p class="text-slate-600 text-xs">De todo. Tem uma grelha protetora em aço inoxidável milimétrica que apanha só os borbotos com total segurança.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Sticky Bottom Bar for Mobile Conversion -->
+  <div class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t border-slate-200 p-3 z-50 shadow-2xl">
+    <div class="max-w-md mx-auto flex items-center justify-between gap-3">
+      <div>
+        <div class="text-[10px] text-slate-400 uppercase font-semibold">Promoção Black Friday</div>
+        <div class="text-lg font-extrabold text-brand-600">€17,99 <span class="text-xs text-slate-400 line-through font-normal">€34,99</span></div>
+      </div>
+      <a href="#comprar" class="flex-1 bg-brand-500 hover:bg-brand-600 text-white font-bold py-3 px-4 rounded-xl text-center shadow-md transition text-sm">
+        Garantir Oferta (€17,99)
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // Inicializar a Stripe com a chave pública fornecida pelo utilizador
+    const stripe = Stripe('pk_test_51UY7AuRcGh5uPBAFW6W10k2wV3V3ZDERVzfOWZi7jCa6kwXbJWP7qpM6mvvqDFp50t5nUiRLfkWXT6lA0hqJCISj00S9IRbBou');
+
+    function processCheckout(event) {
+      event.preventDefault();
+      const name = document.getElementById('cust-name').value;
+      const email = document.getElementById('cust-email').value;
+      const address = document.getElementById('cust-address').value;
+      const zip = document.getElementById('cust-zip').value;
+      const country = document.getElementById('cust-country').value;
+      
+      const form = document.getElementById('stripe-checkout-form');
+      const successBox = document.getElementById('success-box');
+      
+      // Simula ou dispara o redirecionamento para o Checkout da Stripe
+      form.classList.add('hidden');
+      successBox.classList.remove('hidden');
+      window.scrollTo({ top: document.getElementById('comprar').offsetTop, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
